@@ -1,45 +1,31 @@
-        document.addEventListener("DOMContentLoaded", () => {
-            const initialMaintenanceData = [
-                { id: 1, task: "原子炉施設", level: 1, children: [
-                    { id: 2, task: "原子炉本体", level: 2, children: [
-                        { id: 3, task: "原子炉圧力容器", level: 3, children: [
-                            { id: 4, task: "圧力容器の開放点検", level: 4, results: { 2020: { planned: true, actual: true }, 2022: { planned: true, actual: true }, 2024: { planned: true, actual: false } } }
-                        ] }
-                    ] },
-                    { id: 5, task: "核燃料物質の取扱施設及び貯蔵施設", level: 2, children: [
-                        { id: 6, task: "燃料取扱装置", level: 3, children: [
-                            { id: 7, task: "燃料交換機の年次点検", level: 4, results: { 2021: { planned: true, actual: true }, 2023: { planned: true, actual: false }, 2025: { planned: true, actual: false } } }
-                        ] },
-                        { id: 8, task: "使用済燃料貯蔵槽", level: 3, children: [
-                            { id: 9, task: "貯蔵ラックの健全性確認", level: 4, results: { 2020: { planned: true, actual: true }, 2021: { planned: true, actual: true }, 2022: { planned: true, actual: true }, 2023: { planned: true, actual: true }, 2024: { planned: true, actual: true }, 2025: { planned: true, actual: false } } }
-                        ] }
-                    ] },
-                    { id: 10, task: "原子炉冷却系統施設", level: 2, children: [
-                        { id: 11, task: "主冷却系", level: 3, children: [
-                            { id: 12, task: "冷却材ポンプのオーバーホール", level: 4, results: { 2022: { planned: true, actual: true }, 2025: { planned: true, actual: false } } }
-                        ] },
-                        { id: 13, task: "非常用冷却系", level: 3, children: [
-                            { id: 14, task: "高圧注入ポンプの性能試験", level: 4, results: { 2020: { planned: true, actual: true }, 2021: { planned: true, actual: true }, 2022: { planned: true, actual: false }, 2023: { planned: true, actual: true }, 2024: { planned: true, actual: false }, 2025: { planned: true, actual: true } } }
-                        ] }
-                    ] }
-                ] },
-                { id: 15, task: "タービン発電施設", level: 1, children: [
-                    { id: 16, task: "蒸気タービン", level: 2, children: [
-                        { id: 17, task: "タービン本体", level: 3, children: [
-                            { id: 18, task: "タービン翼の超音波探傷検査", level: 4, results: { 2021: { planned: true, actual: false }, 2024: { planned: true, actual: true } } }
-                        ] }
-                    ] },
-                    { id: 19, task: "発電機", level: 2, children: [
-                        { id: 20, task: "発電機固定子", level: 3, children: [
-                            { id: 21, task: "固定子巻線の絶縁抵抗測定", level: 4, results: { 2020: { planned: true, actual: true }, 2022: { planned: true, actual: false }, 2024: { planned: true, actual: true } } }
-                        ] }
-                    ] }
-                ] }
-            ];
-            const initialYears = [2020, 2021, 2022, 2023, 2024, 2025];
-            
-            let maintenanceData = JSON.parse(localStorage.getItem('maintenanceData')) || JSON.parse(JSON.stringify(initialMaintenanceData));
-            let years = JSON.parse(localStorage.getItem('years')) || [...initialYears];
+        document.addEventListener("DOMContentLoaded", async () => {
+            let maintenanceData;
+            let years;
+
+            const savedMaintenanceData = localStorage.getItem('maintenanceData');
+            const savedYears = localStorage.getItem('years');
+
+            if (savedMaintenanceData && savedYears) {
+                maintenanceData = JSON.parse(savedMaintenanceData);
+                years = JSON.parse(savedYears);
+            } else {
+                try {
+                    const response = await fetch('testdata.json');
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    const initialData = await response.json();
+                    maintenanceData = initialData.maintenanceData;
+                    years = initialData.years;
+                } catch (error) {
+                    console.error("初期データの読み込みに失敗しました:", error);
+                    // エラー時のフォールバックデータ
+                    maintenanceData = [];
+                    years = [];
+                    alert("データの読み込みに失敗しました。アプリケーションを初期化できません。");
+                    return;
+                }
+            }
             let dataMap = new Map();
 
             // DOM Elements
