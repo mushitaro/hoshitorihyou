@@ -30,10 +30,10 @@
                   "task": "圧力容器の開放点検",
                   "level": 4,
                   "results": {
-                    "2020": { "planned": true, "actual": true },
-                    "2022": { "planned": true, "actual": true },
-                    "2024": { "planned": true, "actual": true },
-                    "2026": { "planned": true, "actual": false }
+                    "2020": { "planned": true, "actual": true, "planCost": 100, "actualCost": 110 },
+                    "2022": { "planned": true, "actual": true, "planCost": 100, "actualCost": 100 },
+                    "2024": { "planned": true, "actual": true, "planCost": 120, "actualCost": 125 },
+                    "2026": { "planned": true, "actual": false, "planCost": 120, "actualCost": 0 }
                   },
                   "parentId": 3,
                   "bomCode": "1.1.1.1",
@@ -76,10 +76,10 @@
                   "task": "燃料交換機の年次点検",
                   "level": 4,
                   "results": {
-                    "2021": { "planned": true, "actual": true },
-                    "2023": { "planned": true, "actual": true },
-                    "2025": { "planned": true, "actual": true },
-                    "2027": { "planned": true, "actual": false }
+                    "2021": { "planned": true, "actual": true, "planCost": 50, "actualCost": 50 },
+                    "2023": { "planned": true, "actual": true, "planCost": 50, "actualCost": 55 },
+                    "2025": { "planned": true, "actual": true, "planCost": 60, "actualCost": 60 },
+                    "2027": { "planned": true, "actual": false, "planCost": 60, "actualCost": 0 }
                   },
                   "parentId": 6,
                   "bomCode": "1.2.1.1",

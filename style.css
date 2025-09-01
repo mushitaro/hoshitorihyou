@@ -1,4 +1,4 @@
-        /* カスタムスタイル */
+/* カスタムスタイル */
         body {
             padding: 2rem;
         }
@@ -122,4 +122,22 @@
         }
         tr:hover .cycle-col-content .action-icon {
             display: inline-block;
+        }
+
+        /* Cost Mode Styles */
+        .year-col.cost-mode {
+            font-size: 0.9em;
+        }
+        .cost-plan {
+            color: #6c757d; /* secondary */
+        }
+        .cost-actual {
+            font-weight: bold;
+        }
+        .cost-input {
+            width: 100% !important;
+            border-radius: 0.2rem;
+            border: 1px solid #0d6efd;
+            text-align: right;
+            padding: 0 2px;
         }
