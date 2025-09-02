@@ -36,6 +36,16 @@ document.addEventListener("DOMContentLoaded", async () => {
     const saveToast = new bootstrap.Toast(document.getElementById('save-toast'));
     const operationModalEl = document.getElementById('operation-modal');
     const operationModal = new bootstrap.Modal(operationModalEl);
+    const loadingOverlay = document.getElementById('loading-overlay');
+
+    // --- UI Helpers ---
+    function showLoader() {
+        if (loadingOverlay) loadingOverlay.classList.add('show');
+    }
+
+    function hideLoader() {
+        if (loadingOverlay) loadingOverlay.classList.remove('show');
+    }
 
     // --- Data Processing ---
     function saveData() {
@@ -182,7 +192,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
                 if (currentViewMode === 'status') {
                     if (dataForYear) {
-                        const plannedDiv = `<div class="${item.children ? 'summary-mark' : ''}">${dataForYear.planned ? '〇' : ''}</div>`;
+                        const plannedDiv = `<div class="s_summary-mark' : ''}">${dataForYear.planned ? '〇' : ''}</div>`;
                         const actualDiv = `<div class="actual-mark ${item.children ? 'summary-mark summary-actual' : ''}">${dataForYear.actual ? '●' : ''}</div>`;
                         tdResult.innerHTML = plannedDiv + actualDiv;
                     }
@@ -220,11 +230,15 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     function initialize(openStates = getOpenStates()){
-        dataMap.clear();
-        processData(maintenanceData, '', null);
-        maintenanceData.forEach(item => calculateRollups(item));
-        renderTable(openStates);
-        updateToggleAllButtonState();
+        showLoader();
+        setTimeout(() => {
+            dataMap.clear();
+            processData(maintenanceData, '', null);
+            maintenanceData.forEach(item => calculateRollups(item));
+            renderTable(openStates);
+            updateToggleAllButtonState();
+            hideLoader();
+        }, 10);
     }
 
     // --- Modal & Edit Handlers ---
@@ -633,6 +647,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         operationModal.show();
 
         document.getElementById('modal-confirm-reset-btn').onclick = () => {
+            showLoader();
             localStorage.removeItem('maintenanceData');
             localStorage.removeItem('years');
             location.reload();

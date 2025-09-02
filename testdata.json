@@ -30,13 +30,91 @@
                   "task": "圧力容器の開放点検",
                   "level": 4,
                   "results": {
-                    "2020": { "planned": true, "actual": true, "planCost": 100, "actualCost": 110 },
-                    "2022": { "planned": true, "actual": true, "planCost": 100, "actualCost": 100 },
-                    "2024": { "planned": true, "actual": true, "planCost": 120, "actualCost": 125 },
-                    "2026": { "planned": true, "actual": false, "planCost": 120, "actualCost": 0 }
+                    "2020": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 100,
+                      "actualCost": 110
+                    },
+                    "2022": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 100,
+                      "actualCost": 100
+                    },
+                    "2024": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 120,
+                      "actualCost": 125
+                    },
+                    "2026": {
+                      "planned": true,
+                      "actual": false,
+                      "planCost": 120,
+                      "actualCost": 0
+                    }
                   },
                   "parentId": 3,
                   "bomCode": "1.1.1.1",
+                  "cycle": 2
+                },
+                {
+                  "id": 35,
+                  "task": "ASME XI 規定 内部目視・VT/UT（開放点検）",
+                  "level": 4,
+                  "results": {
+                    "2020": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 124015,
+                      "actualCost": 112234
+                    },
+                    "2021": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2022": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 113521,
+                      "actualCost": 107237
+                    },
+                    "2023": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2024": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 126810,
+                      "actualCost": 131291
+                    },
+                    "2025": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2026": {
+                      "planned": true,
+                      "actual": false,
+                      "planCost": 131295,
+                      "actualCost": 0
+                    },
+                    "2027": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    }
+                  },
+                  "parentId": 3,
+                  "bomCode": "1.1.1.2",
                   "cycle": 2
                 }
               ],
@@ -44,10 +122,140 @@
               "bomCode": "1.1.1",
               "cycle": "",
               "rolledUpResults": {
-                "2020": { "planned": true, "actual": true },
-                "2022": { "planned": true, "actual": true },
-                "2024": { "planned": true, "actual": true },
-                "2026": { "planned": true, "actual": false }
+                "2020": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2021": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2022": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2023": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2024": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2025": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2026": {
+                  "planned": true,
+                  "actual": false
+                },
+                "2027": {
+                  "planned": false,
+                  "actual": false
+                }
+              }
+            },
+            {
+              "id": 36,
+              "task": "上蓋・貫通部",
+              "level": 3,
+              "children": [
+                {
+                  "id": 37,
+                  "task": "上蓋貫通部VT/漏えい確認",
+                  "level": 4,
+                  "results": {
+                    "2020": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 22522,
+                      "actualCost": 22170
+                    },
+                    "2021": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2022": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2023": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2024": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 22179,
+                      "actualCost": 20931
+                    },
+                    "2025": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2026": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2027": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    }
+                  },
+                  "parentId": 36,
+                  "bomCode": "1.1.2.1",
+                  "cycle": 4
+                }
+              ],
+              "parentId": 2,
+              "bomCode": "1.1.2",
+              "cycle": "",
+              "rolledUpResults": {
+                "2020": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2021": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2022": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2023": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2024": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2025": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2026": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2027": {
+                  "planned": false,
+                  "actual": false
+                }
               }
             }
           ],
@@ -55,10 +263,38 @@
           "bomCode": "1.1",
           "cycle": "",
           "rolledUpResults": {
-            "2020": { "planned": true, "actual": true },
-            "2022": { "planned": true, "actual": true },
-            "2024": { "planned": true, "actual": true },
-            "2026": { "planned": true, "actual": false }
+            "2020": {
+              "planned": true,
+              "actual": true
+            },
+            "2021": {
+              "planned": false,
+              "actual": false
+            },
+            "2022": {
+              "planned": true,
+              "actual": true
+            },
+            "2023": {
+              "planned": false,
+              "actual": false
+            },
+            "2024": {
+              "planned": true,
+              "actual": true
+            },
+            "2025": {
+              "planned": false,
+              "actual": false
+            },
+            "2026": {
+              "planned": true,
+              "actual": false
+            },
+            "2027": {
+              "planned": false,
+              "actual": false
+            }
           }
         },
         {
@@ -76,10 +312,30 @@
                   "task": "燃料交換機の年次点検",
                   "level": 4,
                   "results": {
-                    "2021": { "planned": true, "actual": true, "planCost": 50, "actualCost": 50 },
-                    "2023": { "planned": true, "actual": true, "planCost": 50, "actualCost": 55 },
-                    "2025": { "planned": true, "actual": true, "planCost": 60, "actualCost": 60 },
-                    "2027": { "planned": true, "actual": false, "planCost": 60, "actualCost": 0 }
+                    "2021": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 50,
+                      "actualCost": 50
+                    },
+                    "2023": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 50,
+                      "actualCost": 55
+                    },
+                    "2025": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 60,
+                      "actualCost": 60
+                    },
+                    "2027": {
+                      "planned": true,
+                      "actual": false,
+                      "planCost": 60,
+                      "actualCost": 0
+                    }
                   },
                   "parentId": 6,
                   "bomCode": "1.2.1.1",
@@ -90,10 +346,38 @@
               "bomCode": "1.2.1",
               "cycle": "",
               "rolledUpResults": {
-                "2021": { "planned": true, "actual": true },
-                "2023": { "planned": true, "actual": true },
-                "2025": { "planned": true, "actual": true },
-                "2027": { "planned": true, "actual": false }
+                "2020": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2021": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2022": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2023": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2024": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2025": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2026": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2027": {
+                  "planned": true,
+                  "actual": false
+                }
               }
             },
             {
@@ -106,14 +390,38 @@
                   "task": "貯蔵ラックの健全性確認",
                   "level": 4,
                   "results": {
-                    "2020": { "planned": true, "actual": true },
-                    "2021": { "planned": true, "actual": true },
-                    "2022": { "planned": true, "actual": true },
-                    "2023": { "planned": true, "actual": true },
-                    "2024": { "planned": true, "actual": true },
-                    "2025": { "planned": true, "actual": true },
-                    "2026": { "planned": true, "actual": false },
-                    "2027": { "planned": true, "actual": false }
+                    "2020": {
+                      "planned": true,
+                      "actual": true
+                    },
+                    "2021": {
+                      "planned": true,
+                      "actual": true
+                    },
+                    "2022": {
+                      "planned": true,
+                      "actual": true
+                    },
+                    "2023": {
+                      "planned": true,
+                      "actual": true
+                    },
+                    "2024": {
+                      "planned": true,
+                      "actual": true
+                    },
+                    "2025": {
+                      "planned": true,
+                      "actual": true
+                    },
+                    "2026": {
+                      "planned": true,
+                      "actual": false
+                    },
+                    "2027": {
+                      "planned": true,
+                      "actual": false
+                    }
                   },
                   "parentId": 8,
                   "bomCode": "1.2.2.1",
@@ -124,14 +432,38 @@
               "bomCode": "1.2.2",
               "cycle": "",
               "rolledUpResults": {
-                "2020": { "planned": true, "actual": true },
-                "2021": { "planned": true, "actual": true },
-                "2022": { "planned": true, "actual": true },
-                "2023": { "planned": true, "actual": true },
-                "2024": { "planned": true, "actual": true },
-                "2025": { "planned": true, "actual": true },
-                "2026": { "planned": true, "actual": false },
-                "2027": { "planned": true, "actual": false }
+                "2020": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2021": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2022": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2023": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2024": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2025": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2026": {
+                  "planned": true,
+                  "actual": false
+                },
+                "2027": {
+                  "planned": true,
+                  "actual": false
+                }
               }
             }
           ],
@@ -139,14 +471,38 @@
           "bomCode": "1.2",
           "cycle": "",
           "rolledUpResults": {
-            "2020": { "planned": true, "actual": true },
-            "2021": { "planned": true, "actual": true },
-            "2022": { "planned": true, "actual": true },
-            "2023": { "planned": true, "actual": true },
-            "2024": { "planned": true, "actual": true },
-            "2025": { "planned": true, "actual": true },
-            "2026": { "planned": true, "actual": false },
-            "2027": { "planned": true, "actual": false }
+            "2020": {
+              "planned": true,
+              "actual": true
+            },
+            "2021": {
+              "planned": true,
+              "actual": true
+            },
+            "2022": {
+              "planned": true,
+              "actual": true
+            },
+            "2023": {
+              "planned": true,
+              "actual": true
+            },
+            "2024": {
+              "planned": true,
+              "actual": true
+            },
+            "2025": {
+              "planned": true,
+              "actual": true
+            },
+            "2026": {
+              "planned": true,
+              "actual": false
+            },
+            "2027": {
+              "planned": true,
+              "actual": false
+            }
           }
         },
         {
@@ -164,20 +520,114 @@
                   "task": "冷却材ポンプのオーバーホール",
                   "level": 4,
                   "results": {
-                    "2022": { "planned": true, "actual": true },
-                    "2025": { "planned": true, "actual": false }
+                    "2022": {
+                      "planned": true,
+                      "actual": true
+                    },
+                    "2025": {
+                      "planned": true,
+                      "actual": false
+                    }
                   },
                   "parentId": 11,
                   "bomCode": "1.3.1.1",
                   "cycle": 3
+                },
+                {
+                  "id": 40,
+                  "task": "原子炉冷却材ポンプ（RCP）メカニカルシール交換",
+                  "level": 4,
+                  "results": {
+                    "2020": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2021": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 32228,
+                      "actualCost": 29047
+                    },
+                    "2022": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2023": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2024": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2025": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 32202,
+                      "actualCost": 33478
+                    },
+                    "2026": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2027": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    }
+                  },
+                  "parentId": 11,
+                  "bomCode": "1.3.1.2",
+                  "cycle": 4
                 }
               ],
               "parentId": 10,
               "bomCode": "1.3.1",
               "cycle": "",
               "rolledUpResults": {
-                "2022": { "planned": true, "actual": true },
-                "2025": { "planned": true, "actual": false }
+                "2020": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2021": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2022": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2023": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2024": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2025": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2026": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2027": {
+                  "planned": false,
+                  "actual": false
+                }
               }
             },
             {
@@ -190,10 +640,22 @@
                   "task": "高圧注入ポンプの性能試験",
                   "level": 4,
                   "results": {
-                    "2020": { "planned": true, "actual": true },
-                    "2022": { "planned": true, "actual": false },
-                    "2024": { "planned": true, "actual": true },
-                    "2026": { "planned": true, "actual": false }
+                    "2020": {
+                      "planned": true,
+                      "actual": true
+                    },
+                    "2022": {
+                      "planned": true,
+                      "actual": false
+                    },
+                    "2024": {
+                      "planned": true,
+                      "actual": true
+                    },
+                    "2026": {
+                      "planned": true,
+                      "actual": false
+                    }
                   },
                   "parentId": 13,
                   "bomCode": "1.3.2.1",
@@ -204,10 +666,140 @@
               "bomCode": "1.3.2",
               "cycle": "",
               "rolledUpResults": {
-                "2020": { "planned": true, "actual": true },
-                "2022": { "planned": true, "actual": false },
-                "2024": { "planned": true, "actual": true },
-                "2026": { "planned": true, "actual": false }
+                "2020": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2021": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2022": {
+                  "planned": true,
+                  "actual": false
+                },
+                "2023": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2024": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2025": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2026": {
+                  "planned": true,
+                  "actual": false
+                },
+                "2027": {
+                  "planned": false,
+                  "actual": false
+                }
+              }
+            },
+            {
+              "id": 38,
+              "task": "蒸気発生器",
+              "level": 3,
+              "children": [
+                {
+                  "id": 39,
+                  "task": "SG細管ECT（渦電流探傷）",
+                  "level": 4,
+                  "results": {
+                    "2020": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 40051,
+                      "actualCost": 36258
+                    },
+                    "2021": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2022": {
+                      "planned": true,
+                      "actual": false,
+                      "planCost": 37109,
+                      "actualCost": 0
+                    },
+                    "2023": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2024": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 41439,
+                      "actualCost": 41811
+                    },
+                    "2025": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2026": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 37316,
+                      "actualCost": 37982
+                    },
+                    "2027": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    }
+                  },
+                  "parentId": 38,
+                  "bomCode": "1.3.3.1",
+                  "cycle": 2
+                }
+              ],
+              "parentId": 10,
+              "bomCode": "1.3.3",
+              "cycle": "",
+              "rolledUpResults": {
+                "2020": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2021": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2022": {
+                  "planned": true,
+                  "actual": false
+                },
+                "2023": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2024": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2025": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2026": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2027": {
+                  "planned": false,
+                  "actual": false
+                }
               }
             }
           ],
@@ -215,11 +807,432 @@
           "bomCode": "1.3",
           "cycle": "",
           "rolledUpResults": {
-            "2020": { "planned": true, "actual": true },
-            "2022": { "planned": true, "actual": false },
-            "2024": { "planned": true, "actual": true },
-            "2025": { "planned": true, "actual": false },
-            "2026": { "planned": true, "actual": false }
+            "2020": {
+              "planned": true,
+              "actual": true
+            },
+            "2021": {
+              "planned": false,
+              "actual": false
+            },
+            "2022": {
+              "planned": true,
+              "actual": true
+            },
+            "2023": {
+              "planned": false,
+              "actual": false
+            },
+            "2024": {
+              "planned": true,
+              "actual": true
+            },
+            "2025": {
+              "planned": true,
+              "actual": false
+            },
+            "2026": {
+              "planned": true,
+              "actual": false
+            },
+            "2027": {
+              "planned": false,
+              "actual": false
+            }
+          }
+        },
+        {
+          "id": 41,
+          "task": "非常用炉心冷却系(ECCS)",
+          "level": 2,
+          "children": [
+            {
+              "id": 42,
+              "task": "高圧注入系",
+              "level": 3,
+              "children": [
+                {
+                  "id": 43,
+                  "task": "HPIポンプ流量・圧力性能試験（IST）",
+                  "level": 4,
+                  "results": {
+                    "2020": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 7693,
+                      "actualCost": 7163
+                    },
+                    "2021": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 8878,
+                      "actualCost": 8588
+                    },
+                    "2022": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 7218,
+                      "actualCost": 6636
+                    },
+                    "2023": {
+                      "planned": true,
+                      "actual": false,
+                      "planCost": 8667,
+                      "actualCost": 0
+                    },
+                    "2024": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 8199,
+                      "actualCost": 8703
+                    },
+                    "2025": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 8441,
+                      "actualCost": 8502
+                    },
+                    "2026": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 8908,
+                      "actualCost": 8692
+                    },
+                    "2027": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 8100,
+                      "actualCost": 8634
+                    }
+                  },
+                  "parentId": 42,
+                  "bomCode": "1.4.1.1",
+                  "cycle": 1
+                }
+              ],
+              "parentId": 41,
+              "bomCode": "1.4.1",
+              "cycle": "",
+              "rolledUpResults": {
+                "2020": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2021": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2022": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2023": {
+                  "planned": true,
+                  "actual": false
+                },
+                "2024": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2025": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2026": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2027": {
+                  "planned": true,
+                  "actual": true
+                }
+              }
+            }
+          ],
+          "parentId": 1,
+          "bomCode": "1.4",
+          "cycle": "",
+          "rolledUpResults": {
+            "2020": {
+              "planned": false,
+              "actual": false
+            },
+            "2021": {
+              "planned": false,
+              "actual": false
+            },
+            "2022": {
+              "planned": false,
+              "actual": false
+            },
+            "2023": {
+              "planned": false,
+              "actual": false
+            },
+            "2024": {
+              "planned": false,
+              "actual": false
+            },
+            "2025": {
+              "planned": false,
+              "actual": false
+            },
+            "2026": {
+              "planned": false,
+              "actual": false
+            },
+            "2027": {
+              "planned": false,
+              "actual": false
+            }
+          }
+        },
+        {
+          "id": 44,
+          "task": "格納容器",
+          "level": 2,
+          "children": [
+            {
+              "id": 45,
+              "task": "統合漏えい率試験(ILRT, Type A)",
+              "level": 3,
+              "children": [
+                {
+                  "id": 46,
+                  "task": "格納容器全体気密試験",
+                  "level": 4,
+                  "results": {
+                    "2020": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2021": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2022": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 82276,
+                      "actualCost": 88228
+                    },
+                    "2023": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2024": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2025": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2026": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2027": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    }
+                  },
+                  "parentId": 45,
+                  "bomCode": "1.5.1.1",
+                  "cycle": 10
+                }
+              ],
+              "parentId": 44,
+              "bomCode": "1.5.1",
+              "cycle": "",
+              "rolledUpResults": {
+                "2020": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2021": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2022": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2023": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2024": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2025": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2026": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2027": {
+                  "planned": false,
+                  "actual": false
+                }
+              }
+            },
+            {
+              "id": 47,
+              "task": "局部漏えい率試験(LLRT, Type B/C)",
+              "level": 3,
+              "children": [
+                {
+                  "id": 48,
+                  "task": "貫通部・バルブ座漏えい試験",
+                  "level": 4,
+                  "results": {
+                    "2020": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2021": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 12223,
+                      "actualCost": 12723
+                    },
+                    "2022": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2023": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 10692,
+                      "actualCost": 10110
+                    },
+                    "2024": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2025": {
+                      "planned": true,
+                      "actual": false,
+                      "planCost": 11393,
+                      "actualCost": 0
+                    },
+                    "2026": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2027": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 10790,
+                      "actualCost": 10213
+                    }
+                  },
+                  "parentId": 47,
+                  "bomCode": "1.5.2.1",
+                  "cycle": 2
+                }
+              ],
+              "parentId": 44,
+              "bomCode": "1.5.2",
+              "cycle": "",
+              "rolledUpResults": {
+                "2020": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2021": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2022": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2023": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2024": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2025": {
+                  "planned": true,
+                  "actual": false
+                },
+                "2026": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2027": {
+                  "planned": true,
+                  "actual": true
+                }
+              }
+            }
+          ],
+          "parentId": 1,
+          "bomCode": "1.5",
+          "cycle": "",
+          "rolledUpResults": {
+            "2020": {
+              "planned": false,
+              "actual": false
+            },
+            "2021": {
+              "planned": false,
+              "actual": false
+            },
+            "2022": {
+              "planned": false,
+              "actual": false
+            },
+            "2023": {
+              "planned": false,
+              "actual": false
+            },
+            "2024": {
+              "planned": false,
+              "actual": false
+            },
+            "2025": {
+              "planned": false,
+              "actual": false
+            },
+            "2026": {
+              "planned": false,
+              "actual": false
+            },
+            "2027": {
+              "planned": false,
+              "actual": false
+            }
           }
         }
       ],
@@ -227,14 +1240,38 @@
       "bomCode": "1",
       "cycle": "",
       "rolledUpResults": {
-        "2020": { "planned": true, "actual": true },
-        "2021": { "planned": true, "actual": true },
-        "2022": { "planned": true, "actual": false },
-        "2023": { "planned": true, "actual": true },
-        "2024": { "planned": true, "actual": true },
-        "2025": { "planned": true, "actual": false },
-        "2026": { "planned": true, "actual": false },
-        "2027": { "planned": true, "actual": false }
+        "2020": {
+          "planned": true,
+          "actual": true
+        },
+        "2021": {
+          "planned": true,
+          "actual": true
+        },
+        "2022": {
+          "planned": true,
+          "actual": true
+        },
+        "2023": {
+          "planned": true,
+          "actual": true
+        },
+        "2024": {
+          "planned": true,
+          "actual": true
+        },
+        "2025": {
+          "planned": true,
+          "actual": true
+        },
+        "2026": {
+          "planned": true,
+          "actual": false
+        },
+        "2027": {
+          "planned": true,
+          "actual": false
+        }
       }
     },
     {
@@ -257,12 +1294,79 @@
                   "task": "タービン翼の超音波探傷検査",
                   "level": 4,
                   "results": {
-                    "2021": { "planned": true, "actual": false },
-                    "2024": { "planned": true, "actual": true },
-                    "2027": { "planned": true, "actual": false }
+                    "2021": {
+                      "planned": true,
+                      "actual": false
+                    },
+                    "2024": {
+                      "planned": true,
+                      "actual": true
+                    },
+                    "2027": {
+                      "planned": true,
+                      "actual": false
+                    }
                   },
                   "parentId": 17,
                   "bomCode": "2.1.1.1",
+                  "cycle": 3
+                },
+                {
+                  "id": 49,
+                  "task": "LP最終段ブレード超音波探傷",
+                  "level": 4,
+                  "results": {
+                    "2020": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 19893,
+                      "actualCost": 19010
+                    },
+                    "2021": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2022": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2023": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 22716,
+                      "actualCost": 22102
+                    },
+                    "2024": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2025": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2026": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 21315,
+                      "actualCost": 20077
+                    },
+                    "2027": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    }
+                  },
+                  "parentId": 17,
+                  "bomCode": "2.1.1.2",
                   "cycle": 3
                 }
               ],
@@ -270,9 +1374,38 @@
               "bomCode": "2.1.1",
               "cycle": "",
               "rolledUpResults": {
-                "2021": { "planned": true, "actual": false },
-                "2024": { "planned": true, "actual": true },
-                "2027": { "planned": true, "actual": false }
+                "2020": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2021": {
+                  "planned": true,
+                  "actual": false
+                },
+                "2022": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2023": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2024": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2025": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2026": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2027": {
+                  "planned": true,
+                  "actual": false
+                }
               }
             }
           ],
@@ -280,9 +1413,38 @@
           "bomCode": "2.1",
           "cycle": "",
           "rolledUpResults": {
-            "2021": { "planned": true, "actual": false },
-            "2024": { "planned": true, "actual": true },
-            "2027": { "planned": true, "actual": false }
+            "2020": {
+              "planned": false,
+              "actual": false
+            },
+            "2021": {
+              "planned": true,
+              "actual": false
+            },
+            "2022": {
+              "planned": false,
+              "actual": false
+            },
+            "2023": {
+              "planned": false,
+              "actual": false
+            },
+            "2024": {
+              "planned": true,
+              "actual": true
+            },
+            "2025": {
+              "planned": false,
+              "actual": false
+            },
+            "2026": {
+              "planned": false,
+              "actual": false
+            },
+            "2027": {
+              "planned": true,
+              "actual": false
+            }
           }
         },
         {
@@ -300,10 +1462,22 @@
                   "task": "固定子巻線の絶縁抵抗測定",
                   "level": 4,
                   "results": {
-                    "2020": { "planned": true, "actual": true },
-                    "2022": { "planned": true, "actual": false },
-                    "2024": { "planned": true, "actual": true },
-                    "2026": { "planned": true, "actual": false }
+                    "2020": {
+                      "planned": true,
+                      "actual": true
+                    },
+                    "2022": {
+                      "planned": true,
+                      "actual": false
+                    },
+                    "2024": {
+                      "planned": true,
+                      "actual": true
+                    },
+                    "2026": {
+                      "planned": true,
+                      "actual": false
+                    }
                   },
                   "parentId": 20,
                   "bomCode": "2.2.1.1",
@@ -314,10 +1488,140 @@
               "bomCode": "2.2.1",
               "cycle": "",
               "rolledUpResults": {
-                "2020": { "planned": true, "actual": true },
-                "2022": { "planned": true, "actual": false },
-                "2024": { "planned": true, "actual": true },
-                "2026": { "planned": true, "actual": false }
+                "2020": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2021": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2022": {
+                  "planned": true,
+                  "actual": false
+                },
+                "2023": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2024": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2025": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2026": {
+                  "planned": true,
+                  "actual": false
+                },
+                "2027": {
+                  "planned": false,
+                  "actual": false
+                }
+              }
+            },
+            {
+              "id": 56,
+              "task": "固定子",
+              "level": 3,
+              "children": [
+                {
+                  "id": 57,
+                  "task": "固定子巻線絶縁抵抗測定・PD監視",
+                  "level": 4,
+                  "results": {
+                    "2020": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 9711,
+                      "actualCost": 10662
+                    },
+                    "2021": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2022": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 10336,
+                      "actualCost": 10454
+                    },
+                    "2023": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2024": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 10443,
+                      "actualCost": 11159
+                    },
+                    "2025": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2026": {
+                      "planned": true,
+                      "actual": false,
+                      "planCost": 10662,
+                      "actualCost": 0
+                    },
+                    "2027": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    }
+                  },
+                  "parentId": 56,
+                  "bomCode": "2.2.2.1",
+                  "cycle": 2
+                }
+              ],
+              "parentId": 19,
+              "bomCode": "2.2.2",
+              "cycle": "",
+              "rolledUpResults": {
+                "2020": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2021": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2022": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2023": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2024": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2025": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2026": {
+                  "planned": true,
+                  "actual": false
+                },
+                "2027": {
+                  "planned": false,
+                  "actual": false
+                }
               }
             }
           ],
@@ -325,10 +1629,330 @@
           "bomCode": "2.2",
           "cycle": "",
           "rolledUpResults": {
-            "2020": { "planned": true, "actual": true },
-            "2022": { "planned": true, "actual": false },
-            "2024": { "planned": true, "actual": true },
-            "2026": { "planned": true, "actual": false }
+            "2020": {
+              "planned": true,
+              "actual": true
+            },
+            "2021": {
+              "planned": false,
+              "actual": false
+            },
+            "2022": {
+              "planned": true,
+              "actual": false
+            },
+            "2023": {
+              "planned": false,
+              "actual": false
+            },
+            "2024": {
+              "planned": true,
+              "actual": true
+            },
+            "2025": {
+              "planned": false,
+              "actual": false
+            },
+            "2026": {
+              "planned": true,
+              "actual": false
+            },
+            "2027": {
+              "planned": false,
+              "actual": false
+            }
+          }
+        },
+        {
+          "id": 50,
+          "task": "復水・給水系",
+          "level": 2,
+          "children": [
+            {
+              "id": 51,
+              "task": "復水器",
+              "level": 3,
+              "children": [
+                {
+                  "id": 52,
+                  "task": "復水器チューブECT・プラグ処置",
+                  "level": 4,
+                  "results": {
+                    "2020": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 26434,
+                      "actualCost": 28743
+                    },
+                    "2021": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2022": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2023": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2024": {
+                      "planned": true,
+                      "actual": false,
+                      "planCost": 28995,
+                      "actualCost": 0
+                    },
+                    "2025": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2026": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2027": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    }
+                  },
+                  "parentId": 51,
+                  "bomCode": "2.3.1.1",
+                  "cycle": 4
+                }
+              ],
+              "parentId": 50,
+              "bomCode": "2.3.1",
+              "cycle": "",
+              "rolledUpResults": {
+                "2020": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2021": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2022": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2023": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2024": {
+                  "planned": true,
+                  "actual": false
+                },
+                "2025": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2026": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2027": {
+                  "planned": false,
+                  "actual": false
+                }
+              }
+            }
+          ],
+          "parentId": 15,
+          "bomCode": "2.3",
+          "cycle": "",
+          "rolledUpResults": {
+            "2020": {
+              "planned": false,
+              "actual": false
+            },
+            "2021": {
+              "planned": false,
+              "actual": false
+            },
+            "2022": {
+              "planned": false,
+              "actual": false
+            },
+            "2023": {
+              "planned": false,
+              "actual": false
+            },
+            "2024": {
+              "planned": false,
+              "actual": false
+            },
+            "2025": {
+              "planned": false,
+              "actual": false
+            },
+            "2026": {
+              "planned": false,
+              "actual": false
+            },
+            "2027": {
+              "planned": false,
+              "actual": false
+            }
+          }
+        },
+        {
+          "id": 53,
+          "task": "給水加熱器",
+          "level": 2,
+          "children": [
+            {
+              "id": 54,
+              "task": "高圧給水加熱器",
+              "level": 3,
+              "children": [
+                {
+                  "id": 55,
+                  "task": "ドレンクーラ管板点検",
+                  "level": 4,
+                  "results": {
+                    "2020": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2021": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 15393,
+                      "actualCost": 14381
+                    },
+                    "2022": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2023": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2024": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2025": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 15825,
+                      "actualCost": 14760
+                    },
+                    "2026": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2027": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    }
+                  },
+                  "parentId": 54,
+                  "bomCode": "2.4.1.1",
+                  "cycle": 4
+                }
+              ],
+              "parentId": 53,
+              "bomCode": "2.4.1",
+              "cycle": "",
+              "rolledUpResults": {
+                "2020": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2021": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2022": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2023": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2024": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2025": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2026": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2027": {
+                  "planned": false,
+                  "actual": false
+                }
+              }
+            }
+          ],
+          "parentId": 15,
+          "bomCode": "2.4",
+          "cycle": "",
+          "rolledUpResults": {
+            "2020": {
+              "planned": false,
+              "actual": false
+            },
+            "2021": {
+              "planned": false,
+              "actual": false
+            },
+            "2022": {
+              "planned": false,
+              "actual": false
+            },
+            "2023": {
+              "planned": false,
+              "actual": false
+            },
+            "2024": {
+              "planned": false,
+              "actual": false
+            },
+            "2025": {
+              "planned": false,
+              "actual": false
+            },
+            "2026": {
+              "planned": false,
+              "actual": false
+            },
+            "2027": {
+              "planned": false,
+              "actual": false
+            }
           }
         }
       ],
@@ -336,12 +1960,38 @@
       "bomCode": "2",
       "cycle": "",
       "rolledUpResults": {
-        "2020": { "planned": true, "actual": true },
-        "2021": { "planned": true, "actual": false },
-        "2022": { "planned": true, "actual": false },
-        "2024": { "planned": true, "actual": true },
-        "2026": { "planned": true, "actual": false },
-        "2027": { "planned": true, "actual": false }
+        "2020": {
+          "planned": true,
+          "actual": true
+        },
+        "2021": {
+          "planned": true,
+          "actual": false
+        },
+        "2022": {
+          "planned": true,
+          "actual": false
+        },
+        "2023": {
+          "planned": false,
+          "actual": false
+        },
+        "2024": {
+          "planned": true,
+          "actual": true
+        },
+        "2025": {
+          "planned": false,
+          "actual": false
+        },
+        "2026": {
+          "planned": true,
+          "actual": false
+        },
+        "2027": {
+          "planned": true,
+          "actual": false
+        }
       }
     },
     {
@@ -359,37 +2009,187 @@
               "task": "エリアモニタの校正",
               "level": 3,
               "children": [
-                  {
-                    "id": 25,
-                    "task": "定期校正作業",
-                    "level": 4,
-                    "results": {
-                      "2020": { "planned": true, "actual": true },
-                      "2021": { "planned": true, "actual": true },
-                      "2022": { "planned": true, "actual": true },
-                      "2023": { "planned": true, "actual": true },
-                      "2024": { "planned": true, "actual": true },
-                      "2025": { "planned": true, "actual": false },
-                      "2026": { "planned": true, "actual": false },
-                      "2027": { "planned": true, "actual": false }
+                {
+                  "id": 25,
+                  "task": "定期校正作業",
+                  "level": 4,
+                  "results": {
+                    "2020": {
+                      "planned": true,
+                      "actual": true
                     },
-                    "parentId": 24,
-                    "bomCode": "3.1.1.1",
-                    "cycle": 1
-                  }
+                    "2021": {
+                      "planned": true,
+                      "actual": true
+                    },
+                    "2022": {
+                      "planned": true,
+                      "actual": true
+                    },
+                    "2023": {
+                      "planned": true,
+                      "actual": true
+                    },
+                    "2024": {
+                      "planned": true,
+                      "actual": true
+                    },
+                    "2025": {
+                      "planned": true,
+                      "actual": false
+                    },
+                    "2026": {
+                      "planned": true,
+                      "actual": false
+                    },
+                    "2027": {
+                      "planned": true,
+                      "actual": false
+                    }
+                  },
+                  "parentId": 24,
+                  "bomCode": "3.1.1.1",
+                  "cycle": 1
+                }
               ],
               "parentId": 23,
               "bomCode": "3.1.1",
               "cycle": "",
               "rolledUpResults": {
-                "2020": { "planned": true, "actual": true },
-                "2021": { "planned": true, "actual": true },
-                "2022": { "planned": true, "actual": true },
-                "2023": { "planned": true, "actual": true },
-                "2024": { "planned": true, "actual": true },
-                "2025": { "planned": true, "actual": false },
-                "2026": { "planned": true, "actual": false },
-                "2027": { "planned": true, "actual": false }
+                "2020": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2021": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2022": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2023": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2024": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2025": {
+                  "planned": true,
+                  "actual": false
+                },
+                "2026": {
+                  "planned": true,
+                  "actual": false
+                },
+                "2027": {
+                  "planned": true,
+                  "actual": false
+                }
+              }
+            },
+            {
+              "id": 78,
+              "task": "エリアモニタ",
+              "level": 3,
+              "children": [
+                {
+                  "id": 79,
+                  "task": "エリアモニタ年次校正",
+                  "level": 4,
+                  "results": {
+                    "2020": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 3188,
+                      "actualCost": 3357
+                    },
+                    "2021": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 2732,
+                      "actualCost": 2718
+                    },
+                    "2022": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 3036,
+                      "actualCost": 2893
+                    },
+                    "2023": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 3268,
+                      "actualCost": 3218
+                    },
+                    "2024": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 2792,
+                      "actualCost": 2814
+                    },
+                    "2025": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 3166,
+                      "actualCost": 2977
+                    },
+                    "2026": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 2864,
+                      "actualCost": 3148
+                    },
+                    "2027": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 3108,
+                      "actualCost": 3070
+                    }
+                  },
+                  "parentId": 78,
+                  "bomCode": "3.1.2.1",
+                  "cycle": 1
+                }
+              ],
+              "parentId": 23,
+              "bomCode": "3.1.2",
+              "cycle": "",
+              "rolledUpResults": {
+                "2020": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2021": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2022": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2023": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2024": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2025": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2026": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2027": {
+                  "planned": true,
+                  "actual": true
+                }
               }
             }
           ],
@@ -397,14 +2197,330 @@
           "bomCode": "3.1",
           "cycle": "",
           "rolledUpResults": {
-            "2020": { "planned": true, "actual": true },
-            "2021": { "planned": true, "actual": true },
-            "2022": { "planned": true, "actual": true },
-            "2023": { "planned": true, "actual": true },
-            "2024": { "planned": true, "actual": true },
-            "2025": { "planned": true, "actual": false },
-            "2026": { "planned": true, "actual": false },
-            "2027": { "planned": true, "actual": false }
+            "2020": {
+              "planned": true,
+              "actual": true
+            },
+            "2021": {
+              "planned": true,
+              "actual": true
+            },
+            "2022": {
+              "planned": true,
+              "actual": true
+            },
+            "2023": {
+              "planned": true,
+              "actual": true
+            },
+            "2024": {
+              "planned": true,
+              "actual": true
+            },
+            "2025": {
+              "planned": true,
+              "actual": false
+            },
+            "2026": {
+              "planned": true,
+              "actual": false
+            },
+            "2027": {
+              "planned": true,
+              "actual": false
+            }
+          }
+        },
+        {
+          "id": 80,
+          "task": "廃棄物管理",
+          "level": 2,
+          "children": [
+            {
+              "id": 81,
+              "task": "廃液処理系",
+              "level": 3,
+              "children": [
+                {
+                  "id": 82,
+                  "task": "蒸発濃縮装置の定期点検",
+                  "level": 4,
+                  "results": {
+                    "2020": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 12051,
+                      "actualCost": 11138
+                    },
+                    "2021": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2022": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 11207,
+                      "actualCost": 10844
+                    },
+                    "2023": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2024": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 12254,
+                      "actualCost": 11593
+                    },
+                    "2025": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2026": {
+                      "planned": true,
+                      "actual": false,
+                      "planCost": 11194,
+                      "actualCost": 0
+                    },
+                    "2027": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    }
+                  },
+                  "parentId": 81,
+                  "bomCode": "3.2.1.1",
+                  "cycle": 2
+                }
+              ],
+              "parentId": 80,
+              "bomCode": "3.2.1",
+              "cycle": "",
+              "rolledUpResults": {
+                "2020": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2021": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2022": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2023": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2024": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2025": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2026": {
+                  "planned": true,
+                  "actual": false
+                },
+                "2027": {
+                  "planned": false,
+                  "actual": false
+                }
+              }
+            }
+          ],
+          "parentId": 22,
+          "bomCode": "3.2",
+          "cycle": "",
+          "rolledUpResults": {
+            "2020": {
+              "planned": false,
+              "actual": false
+            },
+            "2021": {
+              "planned": false,
+              "actual": false
+            },
+            "2022": {
+              "planned": false,
+              "actual": false
+            },
+            "2023": {
+              "planned": false,
+              "actual": false
+            },
+            "2024": {
+              "planned": false,
+              "actual": false
+            },
+            "2025": {
+              "planned": false,
+              "actual": false
+            },
+            "2026": {
+              "planned": false,
+              "actual": false
+            },
+            "2027": {
+              "planned": false,
+              "actual": false
+            }
+          }
+        },
+        {
+          "id": 83,
+          "task": "汚染監視",
+          "level": 2,
+          "children": [
+            {
+              "id": 84,
+              "task": "出入口監視装置",
+              "level": 3,
+              "children": [
+                {
+                  "id": 85,
+                  "task": "ホールボディカウンタ・ゲートモニタ校正",
+                  "level": 4,
+                  "results": {
+                    "2020": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 2243,
+                      "actualCost": 2302
+                    },
+                    "2021": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 2337,
+                      "actualCost": 2526
+                    },
+                    "2022": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 2716,
+                      "actualCost": 2483
+                    },
+                    "2023": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 2343,
+                      "actualCost": 2422
+                    },
+                    "2024": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 2329,
+                      "actualCost": 2158
+                    },
+                    "2025": {
+                      "planned": true,
+                      "actual": false,
+                      "planCost": 2761,
+                      "actualCost": 0
+                    },
+                    "2026": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 2543,
+                      "actualCost": 2529
+                    },
+                    "2027": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 2671,
+                      "actualCost": 2835
+                    }
+                  },
+                  "parentId": 84,
+                  "bomCode": "3.3.1.1",
+                  "cycle": 1
+                }
+              ],
+              "parentId": 83,
+              "bomCode": "3.3.1",
+              "cycle": "",
+              "rolledUpResults": {
+                "2020": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2021": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2022": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2023": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2024": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2025": {
+                  "planned": true,
+                  "actual": false
+                },
+                "2026": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2027": {
+                  "planned": true,
+                  "actual": true
+                }
+              }
+            }
+          ],
+          "parentId": 22,
+          "bomCode": "3.3",
+          "cycle": "",
+          "rolledUpResults": {
+            "2020": {
+              "planned": false,
+              "actual": false
+            },
+            "2021": {
+              "planned": false,
+              "actual": false
+            },
+            "2022": {
+              "planned": false,
+              "actual": false
+            },
+            "2023": {
+              "planned": false,
+              "actual": false
+            },
+            "2024": {
+              "planned": false,
+              "actual": false
+            },
+            "2025": {
+              "planned": false,
+              "actual": false
+            },
+            "2026": {
+              "planned": false,
+              "actual": false
+            },
+            "2027": {
+              "planned": false,
+              "actual": false
+            }
           }
         }
       ],
@@ -412,14 +2528,38 @@
       "bomCode": "3",
       "cycle": "",
       "rolledUpResults": {
-        "2020": { "planned": true, "actual": true },
-        "2021": { "planned": true, "actual": true },
-        "2022": { "planned": true, "actual": true },
-        "2023": { "planned": true, "actual": true },
-        "2024": { "planned": true, "actual": true },
-        "2025": { "planned": true, "actual": false },
-        "2026": { "planned": true, "actual": false },
-        "2027": { "planned": true, "actual": false }
+        "2020": {
+          "planned": true,
+          "actual": true
+        },
+        "2021": {
+          "planned": true,
+          "actual": true
+        },
+        "2022": {
+          "planned": true,
+          "actual": true
+        },
+        "2023": {
+          "planned": true,
+          "actual": true
+        },
+        "2024": {
+          "planned": true,
+          "actual": true
+        },
+        "2025": {
+          "planned": true,
+          "actual": false
+        },
+        "2026": {
+          "planned": true,
+          "actual": false
+        },
+        "2027": {
+          "planned": true,
+          "actual": false
+        }
       }
     },
     {
@@ -447,10 +2587,22 @@
                       "task": "燃料フィルタの清掃・交換",
                       "level": 5,
                       "results": {
-                        "2021": { "planned": true, "actual": true },
-                        "2023": { "planned": true, "actual": true },
-                        "2025": { "planned": true, "actual": true },
-                        "2027": { "planned": true, "actual": false }
+                        "2021": {
+                          "planned": true,
+                          "actual": true
+                        },
+                        "2023": {
+                          "planned": true,
+                          "actual": true
+                        },
+                        "2025": {
+                          "planned": true,
+                          "actual": true
+                        },
+                        "2027": {
+                          "planned": true,
+                          "actual": false
+                        }
                       },
                       "parentId": 29,
                       "bomCode": "4.1.1.1.1",
@@ -461,10 +2613,38 @@
                   "bomCode": "4.1.1.1",
                   "cycle": "",
                   "rolledUpResults": {
-                    "2021": { "planned": true, "actual": true },
-                    "2023": { "planned": true, "actual": true },
-                    "2025": { "planned": true, "actual": true },
-                    "2027": { "planned": true, "actual": false }
+                    "2020": {
+                      "planned": false,
+                      "actual": false
+                    },
+                    "2021": {
+                      "planned": true,
+                      "actual": true
+                    },
+                    "2022": {
+                      "planned": false,
+                      "actual": false
+                    },
+                    "2023": {
+                      "planned": true,
+                      "actual": true
+                    },
+                    "2024": {
+                      "planned": false,
+                      "actual": false
+                    },
+                    "2025": {
+                      "planned": true,
+                      "actual": true
+                    },
+                    "2026": {
+                      "planned": false,
+                      "actual": false
+                    },
+                    "2027": {
+                      "planned": true,
+                      "actual": false
+                    }
                   }
                 }
               ],
@@ -472,10 +2652,38 @@
               "bomCode": "4.1.1",
               "cycle": "",
               "rolledUpResults": {
-                "2021": { "planned": true, "actual": true },
-                "2023": { "planned": true, "actual": true },
-                "2025": { "planned": true, "actual": true },
-                "2027": { "planned": true, "actual": false }
+                "2020": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2021": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2022": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2023": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2024": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2025": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2026": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2027": {
+                  "planned": true,
+                  "actual": false
+                }
               }
             }
           ],
@@ -483,10 +2691,38 @@
           "bomCode": "4.1",
           "cycle": "",
           "rolledUpResults": {
-            "2021": { "planned": true, "actual": true },
-            "2023": { "planned": true, "actual": true },
-            "2025": { "planned": true, "actual": true },
-            "2027": { "planned": true, "actual": false }
+            "2020": {
+              "planned": false,
+              "actual": false
+            },
+            "2021": {
+              "planned": true,
+              "actual": true
+            },
+            "2022": {
+              "planned": false,
+              "actual": false
+            },
+            "2023": {
+              "planned": true,
+              "actual": true
+            },
+            "2024": {
+              "planned": false,
+              "actual": false
+            },
+            "2025": {
+              "planned": true,
+              "actual": true
+            },
+            "2026": {
+              "planned": false,
+              "actual": false
+            },
+            "2027": {
+              "planned": true,
+              "actual": false
+            }
           }
         }
       ],
@@ -494,11 +2730,2216 @@
       "bomCode": "4",
       "cycle": "",
       "rolledUpResults": {
-        "2021": { "planned": true, "actual": true },
-        "2023": { "planned": true, "actual": true },
-        "2025": { "planned": true, "actual": true },
-        "2027": { "planned": true, "actual": false }
+        "2020": {
+          "planned": false,
+          "actual": false
+        },
+        "2021": {
+          "planned": true,
+          "actual": true
+        },
+        "2022": {
+          "planned": false,
+          "actual": false
+        },
+        "2023": {
+          "planned": true,
+          "actual": true
+        },
+        "2024": {
+          "planned": false,
+          "actual": false
+        },
+        "2025": {
+          "planned": true,
+          "actual": true
+        },
+        "2026": {
+          "planned": false,
+          "actual": false
+        },
+        "2027": {
+          "planned": true,
+          "actual": false
+        }
+      }
+    },
+    {
+      "id": 31,
+      "task": "電気設備",
+      "level": 1,
+      "children": [
+        {
+          "id": 58,
+          "task": "非常用電源設備",
+          "level": 2,
+          "children": [
+            {
+              "id": 59,
+              "task": "ディーゼル発電機",
+              "level": 3,
+              "children": [
+                {
+                  "id": 60,
+                  "task": "DGオーバーホール",
+                  "level": 4,
+                  "results": {
+                    "2020": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2021": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 28049,
+                      "actualCost": 25424
+                    },
+                    "2022": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2023": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2024": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 28671,
+                      "actualCost": 27339
+                    },
+                    "2025": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2026": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2027": {
+                      "planned": true,
+                      "actual": false,
+                      "planCost": 27919,
+                      "actualCost": 0
+                    }
+                  },
+                  "parentId": 59,
+                  "bomCode": "5.1.1.1",
+                  "cycle": 3
+                }
+              ],
+              "parentId": 58,
+              "bomCode": "5.1.1",
+              "cycle": "",
+              "rolledUpResults": {
+                "2020": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2021": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2022": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2023": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2024": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2025": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2026": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2027": {
+                  "planned": true,
+                  "actual": false
+                }
+              }
+            }
+          ],
+          "parentId": 31,
+          "bomCode": "5.1",
+          "cycle": "",
+          "rolledUpResults": {
+            "2020": {
+              "planned": false,
+              "actual": false
+            },
+            "2021": {
+              "planned": false,
+              "actual": false
+            },
+            "2022": {
+              "planned": false,
+              "actual": false
+            },
+            "2023": {
+              "planned": false,
+              "actual": false
+            },
+            "2024": {
+              "planned": false,
+              "actual": false
+            },
+            "2025": {
+              "planned": false,
+              "actual": false
+            },
+            "2026": {
+              "planned": false,
+              "actual": false
+            },
+            "2027": {
+              "planned": false,
+              "actual": false
+            }
+          }
+        },
+        {
+          "id": 61,
+          "task": "変圧器・開閉所",
+          "level": 2,
+          "children": [
+            {
+              "id": 62,
+              "task": "主変圧器",
+              "level": 3,
+              "children": [
+                {
+                  "id": 63,
+                  "task": "絶縁油DGA分析・油処理",
+                  "level": 4,
+                  "results": {
+                    "2020": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 1659,
+                      "actualCost": 1784
+                    },
+                    "2021": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 1433,
+                      "actualCost": 1478
+                    },
+                    "2022": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 1462,
+                      "actualCost": 1583
+                    },
+                    "2023": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 1485,
+                      "actualCost": 1415
+                    },
+                    "2024": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 1409,
+                      "actualCost": 1426
+                    },
+                    "2025": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 1415,
+                      "actualCost": 1439
+                    },
+                    "2026": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 1643,
+                      "actualCost": 1610
+                    },
+                    "2027": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 1399,
+                      "actualCost": 1538
+                    }
+                  },
+                  "parentId": 62,
+                  "bomCode": "5.2.1.1",
+                  "cycle": 1
+                }
+              ],
+              "parentId": 61,
+              "bomCode": "5.2.1",
+              "cycle": "",
+              "rolledUpResults": {
+                "2020": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2021": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2022": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2023": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2024": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2025": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2026": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2027": {
+                  "planned": true,
+                  "actual": true
+                }
+              }
+            }
+          ],
+          "parentId": 31,
+          "bomCode": "5.2",
+          "cycle": "",
+          "rolledUpResults": {
+            "2020": {
+              "planned": false,
+              "actual": false
+            },
+            "2021": {
+              "planned": false,
+              "actual": false
+            },
+            "2022": {
+              "planned": false,
+              "actual": false
+            },
+            "2023": {
+              "planned": false,
+              "actual": false
+            },
+            "2024": {
+              "planned": false,
+              "actual": false
+            },
+            "2025": {
+              "planned": false,
+              "actual": false
+            },
+            "2026": {
+              "planned": false,
+              "actual": false
+            },
+            "2027": {
+              "planned": false,
+              "actual": false
+            }
+          }
+        },
+        {
+          "id": 64,
+          "task": "遮断器・保護継電器",
+          "level": 2,
+          "children": [
+            {
+              "id": 65,
+              "task": "保護リレー",
+              "level": 3,
+              "children": [
+                {
+                  "id": 66,
+                  "task": "保護リレー機能試験（86/87/50/51他）",
+                  "level": 4,
+                  "results": {
+                    "2020": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 6014,
+                      "actualCost": 5522
+                    },
+                    "2021": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2022": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 5348,
+                      "actualCost": 4930
+                    },
+                    "2023": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2024": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 6184,
+                      "actualCost": 6545
+                    },
+                    "2025": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2026": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 5888,
+                      "actualCost": 5374
+                    },
+                    "2027": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    }
+                  },
+                  "parentId": 65,
+                  "bomCode": "5.3.1.1",
+                  "cycle": 2
+                }
+              ],
+              "parentId": 64,
+              "bomCode": "5.3.1",
+              "cycle": "",
+              "rolledUpResults": {
+                "2020": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2021": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2022": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2023": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2024": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2025": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2026": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2027": {
+                  "planned": false,
+                  "actual": false
+                }
+              }
+            },
+            {
+              "id": 67,
+              "task": "開閉器",
+              "level": 3,
+              "children": [
+                {
+                  "id": 68,
+                  "task": "GIS/気中遮断器オーバーホール",
+                  "level": 4,
+                  "results": {
+                    "2020": {
+                      "planned": true,
+                      "actual": false,
+                      "planCost": 17489,
+                      "actualCost": 0
+                    },
+                    "2021": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2022": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2023": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2024": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 20143,
+                      "actualCost": 20260
+                    },
+                    "2025": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2026": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2027": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    }
+                  },
+                  "parentId": 67,
+                  "bomCode": "5.3.2.1",
+                  "cycle": 4
+                }
+              ],
+              "parentId": 64,
+              "bomCode": "5.3.2",
+              "cycle": "",
+              "rolledUpResults": {
+                "2020": {
+                  "planned": true,
+                  "actual": false
+                },
+                "2021": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2022": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2023": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2024": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2025": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2026": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2027": {
+                  "planned": false,
+                  "actual": false
+                }
+              }
+            }
+          ],
+          "parentId": 31,
+          "bomCode": "5.3",
+          "cycle": "",
+          "rolledUpResults": {
+            "2020": {
+              "planned": false,
+              "actual": false
+            },
+            "2021": {
+              "planned": false,
+              "actual": false
+            },
+            "2022": {
+              "planned": false,
+              "actual": false
+            },
+            "2023": {
+              "planned": false,
+              "actual": false
+            },
+            "2024": {
+              "planned": false,
+              "actual": false
+            },
+            "2025": {
+              "planned": false,
+              "actual": false
+            },
+            "2026": {
+              "planned": false,
+              "actual": false
+            },
+            "2027": {
+              "planned": false,
+              "actual": false
+            }
+          }
+        }
+      ],
+      "parentId": null,
+      "bomCode": "5",
+      "cycle": "",
+      "rolledUpResults": {
+        "2020": {
+          "planned": false,
+          "actual": false
+        },
+        "2021": {
+          "planned": false,
+          "actual": false
+        },
+        "2022": {
+          "planned": false,
+          "actual": false
+        },
+        "2023": {
+          "planned": false,
+          "actual": false
+        },
+        "2024": {
+          "planned": false,
+          "actual": false
+        },
+        "2025": {
+          "planned": false,
+          "actual": false
+        },
+        "2026": {
+          "planned": false,
+          "actual": false
+        },
+        "2027": {
+          "planned": false,
+          "actual": false
+        }
+      }
+    },
+    {
+      "id": 32,
+      "task": "計装・制御",
+      "level": 1,
+      "children": [
+        {
+          "id": 69,
+          "task": "原子炉保護系(RPS)",
+          "level": 2,
+          "children": [
+            {
+              "id": 70,
+              "task": "機能試験",
+              "level": 3,
+              "children": [
+                {
+                  "id": 71,
+                  "task": "スクラム信号ロジック機能確認",
+                  "level": 4,
+                  "results": {
+                    "2020": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 7791,
+                      "actualCost": 8353
+                    },
+                    "2021": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 6179,
+                      "actualCost": 6452
+                    },
+                    "2022": {
+                      "planned": true,
+                      "actual": false,
+                      "planCost": 7305,
+                      "actualCost": 0
+                    },
+                    "2023": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 7062,
+                      "actualCost": 6733
+                    },
+                    "2024": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 7237,
+                      "actualCost": 6675
+                    },
+                    "2025": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 6890,
+                      "actualCost": 6826
+                    },
+                    "2026": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 7762,
+                      "actualCost": 8345
+                    },
+                    "2027": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 6602,
+                      "actualCost": 6603
+                    }
+                  },
+                  "parentId": 70,
+                  "bomCode": "6.1.1.1",
+                  "cycle": 1
+                }
+              ],
+              "parentId": 69,
+              "bomCode": "6.1.1",
+              "cycle": "",
+              "rolledUpResults": {
+                "2020": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2021": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2022": {
+                  "planned": true,
+                  "actual": false
+                },
+                "2023": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2024": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2025": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2026": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2027": {
+                  "planned": true,
+                  "actual": true
+                }
+              }
+            }
+          ],
+          "parentId": 32,
+          "bomCode": "6.1",
+          "cycle": "",
+          "rolledUpResults": {
+            "2020": {
+              "planned": false,
+              "actual": false
+            },
+            "2021": {
+              "planned": false,
+              "actual": false
+            },
+            "2022": {
+              "planned": false,
+              "actual": false
+            },
+            "2023": {
+              "planned": false,
+              "actual": false
+            },
+            "2024": {
+              "planned": false,
+              "actual": false
+            },
+            "2025": {
+              "planned": false,
+              "actual": false
+            },
+            "2026": {
+              "planned": false,
+              "actual": false
+            },
+            "2027": {
+              "planned": false,
+              "actual": false
+            }
+          }
+        },
+        {
+          "id": 72,
+          "task": "計装機器校正",
+          "level": 2,
+          "children": [
+            {
+              "id": 73,
+              "task": "中性子計装",
+              "level": 3,
+              "children": [
+                {
+                  "id": 74,
+                  "task": "励起子・中性子検出器校正",
+                  "level": 4,
+                  "results": {
+                    "2020": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 4614,
+                      "actualCost": 4995
+                    },
+                    "2021": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 5445,
+                      "actualCost": 5226
+                    },
+                    "2022": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 5167,
+                      "actualCost": 5280
+                    },
+                    "2023": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 4583,
+                      "actualCost": 4824
+                    },
+                    "2024": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 5047,
+                      "actualCost": 5328
+                    },
+                    "2025": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 5036,
+                      "actualCost": 4533
+                    },
+                    "2026": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 4789,
+                      "actualCost": 4329
+                    },
+                    "2027": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 5515,
+                      "actualCost": 5933
+                    }
+                  },
+                  "parentId": 73,
+                  "bomCode": "6.2.1.1",
+                  "cycle": 1
+                }
+              ],
+              "parentId": 72,
+              "bomCode": "6.2.1",
+              "cycle": "",
+              "rolledUpResults": {
+                "2020": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2021": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2022": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2023": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2024": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2025": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2026": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2027": {
+                  "planned": true,
+                  "actual": true
+                }
+              }
+            }
+          ],
+          "parentId": 32,
+          "bomCode": "6.2",
+          "cycle": "",
+          "rolledUpResults": {
+            "2020": {
+              "planned": false,
+              "actual": false
+            },
+            "2021": {
+              "planned": false,
+              "actual": false
+            },
+            "2022": {
+              "planned": false,
+              "actual": false
+            },
+            "2023": {
+              "planned": false,
+              "actual": false
+            },
+            "2024": {
+              "planned": false,
+              "actual": false
+            },
+            "2025": {
+              "planned": false,
+              "actual": false
+            },
+            "2026": {
+              "planned": false,
+              "actual": false
+            },
+            "2027": {
+              "planned": false,
+              "actual": false
+            }
+          }
+        },
+        {
+          "id": 75,
+          "task": "タービン制御",
+          "level": 2,
+          "children": [
+            {
+              "id": 76,
+              "task": "オーバースピード試験",
+              "level": 3,
+              "children": [
+                {
+                  "id": 77,
+                  "task": "タービン過速試験（過去データ参照含む）",
+                  "level": 4,
+                  "results": {
+                    "2020": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2021": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 9716,
+                      "actualCost": 9342
+                    },
+                    "2022": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2023": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 8045,
+                      "actualCost": 8653
+                    },
+                    "2024": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2025": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 9965,
+                      "actualCost": 9139
+                    },
+                    "2026": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2027": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 8970,
+                      "actualCost": 8197
+                    }
+                  },
+                  "parentId": 76,
+                  "bomCode": "6.3.1.1",
+                  "cycle": 2
+                }
+              ],
+              "parentId": 75,
+              "bomCode": "6.3.1",
+              "cycle": "",
+              "rolledUpResults": {
+                "2020": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2021": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2022": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2023": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2024": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2025": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2026": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2027": {
+                  "planned": true,
+                  "actual": true
+                }
+              }
+            }
+          ],
+          "parentId": 32,
+          "bomCode": "6.3",
+          "cycle": "",
+          "rolledUpResults": {
+            "2020": {
+              "planned": false,
+              "actual": false
+            },
+            "2021": {
+              "planned": false,
+              "actual": false
+            },
+            "2022": {
+              "planned": false,
+              "actual": false
+            },
+            "2023": {
+              "planned": false,
+              "actual": false
+            },
+            "2024": {
+              "planned": false,
+              "actual": false
+            },
+            "2025": {
+              "planned": false,
+              "actual": false
+            },
+            "2026": {
+              "planned": false,
+              "actual": false
+            },
+            "2027": {
+              "planned": false,
+              "actual": false
+            }
+          }
+        }
+      ],
+      "parentId": null,
+      "bomCode": "6",
+      "cycle": "",
+      "rolledUpResults": {
+        "2020": {
+          "planned": false,
+          "actual": false
+        },
+        "2021": {
+          "planned": false,
+          "actual": false
+        },
+        "2022": {
+          "planned": false,
+          "actual": false
+        },
+        "2023": {
+          "planned": false,
+          "actual": false
+        },
+        "2024": {
+          "planned": false,
+          "actual": false
+        },
+        "2025": {
+          "planned": false,
+          "actual": false
+        },
+        "2026": {
+          "planned": false,
+          "actual": false
+        },
+        "2027": {
+          "planned": false,
+          "actual": false
+        }
+      }
+    },
+    {
+      "id": 33,
+      "task": "建屋・設備",
+      "level": 1,
+      "children": [
+        {
+          "id": 86,
+          "task": "消防設備",
+          "level": 2,
+          "children": [
+            {
+              "id": 87,
+              "task": "スプリンクラ・ドレンチャ",
+              "level": 3,
+              "children": [
+                {
+                  "id": 88,
+                  "task": "起動試験・流量圧力確認",
+                  "level": 4,
+                  "results": {
+                    "2020": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 3703,
+                      "actualCost": 3404
+                    },
+                    "2021": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 3934,
+                      "actualCost": 3874
+                    },
+                    "2022": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 3968,
+                      "actualCost": 4150
+                    },
+                    "2023": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 4166,
+                      "actualCost": 4569
+                    },
+                    "2024": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 3614,
+                      "actualCost": 3544
+                    },
+                    "2025": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 3846,
+                      "actualCost": 4124
+                    },
+                    "2026": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 3759,
+                      "actualCost": 3526
+                    },
+                    "2027": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 3951,
+                      "actualCost": 3889
+                    }
+                  },
+                  "parentId": 87,
+                  "bomCode": "7.1.1.1",
+                  "cycle": 1
+                }
+              ],
+              "parentId": 86,
+              "bomCode": "7.1.1",
+              "cycle": "",
+              "rolledUpResults": {
+                "2020": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2021": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2022": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2023": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2024": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2025": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2026": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2027": {
+                  "planned": true,
+                  "actual": true
+                }
+              }
+            }
+          ],
+          "parentId": 33,
+          "bomCode": "7.1",
+          "cycle": "",
+          "rolledUpResults": {
+            "2020": {
+              "planned": false,
+              "actual": false
+            },
+            "2021": {
+              "planned": false,
+              "actual": false
+            },
+            "2022": {
+              "planned": false,
+              "actual": false
+            },
+            "2023": {
+              "planned": false,
+              "actual": false
+            },
+            "2024": {
+              "planned": false,
+              "actual": false
+            },
+            "2025": {
+              "planned": false,
+              "actual": false
+            },
+            "2026": {
+              "planned": false,
+              "actual": false
+            },
+            "2027": {
+              "planned": false,
+              "actual": false
+            }
+          }
+        },
+        {
+          "id": 89,
+          "task": "クレーン・荷役",
+          "level": 2,
+          "children": [
+            {
+              "id": 90,
+              "task": "炉内クレーン",
+              "level": 3,
+              "children": [
+                {
+                  "id": 91,
+                  "task": "定格荷重試験（立入・安全装置含む）",
+                  "level": 4,
+                  "results": {
+                    "2020": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 18937,
+                      "actualCost": 17989
+                    },
+                    "2021": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2022": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2023": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2024": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 22032,
+                      "actualCost": 21781
+                    },
+                    "2025": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2026": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2027": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    }
+                  },
+                  "parentId": 90,
+                  "bomCode": "7.2.1.1",
+                  "cycle": 4
+                }
+              ],
+              "parentId": 89,
+              "bomCode": "7.2.1",
+              "cycle": "",
+              "rolledUpResults": {
+                "2020": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2021": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2022": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2023": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2024": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2025": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2026": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2027": {
+                  "planned": false,
+                  "actual": false
+                }
+              }
+            }
+          ],
+          "parentId": 33,
+          "bomCode": "7.2",
+          "cycle": "",
+          "rolledUpResults": {
+            "2020": {
+              "planned": false,
+              "actual": false
+            },
+            "2021": {
+              "planned": false,
+              "actual": false
+            },
+            "2022": {
+              "planned": false,
+              "actual": false
+            },
+            "2023": {
+              "planned": false,
+              "actual": false
+            },
+            "2024": {
+              "planned": false,
+              "actual": false
+            },
+            "2025": {
+              "planned": false,
+              "actual": false
+            },
+            "2026": {
+              "planned": false,
+              "actual": false
+            },
+            "2027": {
+              "planned": false,
+              "actual": false
+            }
+          }
+        },
+        {
+          "id": 92,
+          "task": "HVAC",
+          "level": 2,
+          "children": [
+            {
+              "id": 93,
+              "task": "HEPAフィルタ",
+              "level": 3,
+              "children": [
+                {
+                  "id": 94,
+                  "task": "HEPA交換・DP確認",
+                  "level": 4,
+                  "results": {
+                    "2020": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 6520,
+                      "actualCost": 6586
+                    },
+                    "2021": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 5353,
+                      "actualCost": 5888
+                    },
+                    "2022": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 6484,
+                      "actualCost": 7092
+                    },
+                    "2023": {
+                      "planned": true,
+                      "actual": false,
+                      "planCost": 6614,
+                      "actualCost": 0
+                    },
+                    "2024": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 6502,
+                      "actualCost": 6068
+                    },
+                    "2025": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 5979,
+                      "actualCost": 5637
+                    },
+                    "2026": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 5857,
+                      "actualCost": 5340
+                    },
+                    "2027": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 5826,
+                      "actualCost": 6391
+                    }
+                  },
+                  "parentId": 93,
+                  "bomCode": "7.3.1.1",
+                  "cycle": 1
+                }
+              ],
+              "parentId": 92,
+              "bomCode": "7.3.1",
+              "cycle": "",
+              "rolledUpResults": {
+                "2020": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2021": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2022": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2023": {
+                  "planned": true,
+                  "actual": false
+                },
+                "2024": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2025": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2026": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2027": {
+                  "planned": true,
+                  "actual": true
+                }
+              }
+            }
+          ],
+          "parentId": 33,
+          "bomCode": "7.3",
+          "cycle": "",
+          "rolledUpResults": {
+            "2020": {
+              "planned": false,
+              "actual": false
+            },
+            "2021": {
+              "planned": false,
+              "actual": false
+            },
+            "2022": {
+              "planned": false,
+              "actual": false
+            },
+            "2023": {
+              "planned": false,
+              "actual": false
+            },
+            "2024": {
+              "planned": false,
+              "actual": false
+            },
+            "2025": {
+              "planned": false,
+              "actual": false
+            },
+            "2026": {
+              "planned": false,
+              "actual": false
+            },
+            "2027": {
+              "planned": false,
+              "actual": false
+            }
+          }
+        },
+        {
+          "id": 95,
+          "task": "冷却水設備",
+          "level": 2,
+          "children": [
+            {
+              "id": 96,
+              "task": "循環水ポンプ",
+              "level": 3,
+              "children": [
+                {
+                  "id": 97,
+                  "task": "主循環水ポンプOH",
+                  "level": 4,
+                  "results": {
+                    "2020": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2021": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 24535,
+                      "actualCost": 25929
+                    },
+                    "2022": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2023": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2024": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2025": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 25719,
+                      "actualCost": 25323
+                    },
+                    "2026": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2027": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    }
+                  },
+                  "parentId": 96,
+                  "bomCode": "7.4.1.1",
+                  "cycle": 4
+                }
+              ],
+              "parentId": 95,
+              "bomCode": "7.4.1",
+              "cycle": "",
+              "rolledUpResults": {
+                "2020": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2021": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2022": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2023": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2024": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2025": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2026": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2027": {
+                  "planned": false,
+                  "actual": false
+                }
+              }
+            }
+          ],
+          "parentId": 33,
+          "bomCode": "7.4",
+          "cycle": "",
+          "rolledUpResults": {
+            "2020": {
+              "planned": false,
+              "actual": false
+            },
+            "2021": {
+              "planned": false,
+              "actual": false
+            },
+            "2022": {
+              "planned": false,
+              "actual": false
+            },
+            "2023": {
+              "planned": false,
+              "actual": false
+            },
+            "2024": {
+              "planned": false,
+              "actual": false
+            },
+            "2025": {
+              "planned": false,
+              "actual": false
+            },
+            "2026": {
+              "planned": false,
+              "actual": false
+            },
+            "2027": {
+              "planned": false,
+              "actual": false
+            }
+          }
+        }
+      ],
+      "parentId": null,
+      "bomCode": "7",
+      "cycle": "",
+      "rolledUpResults": {
+        "2020": {
+          "planned": false,
+          "actual": false
+        },
+        "2021": {
+          "planned": false,
+          "actual": false
+        },
+        "2022": {
+          "planned": false,
+          "actual": false
+        },
+        "2023": {
+          "planned": false,
+          "actual": false
+        },
+        "2024": {
+          "planned": false,
+          "actual": false
+        },
+        "2025": {
+          "planned": false,
+          "actual": false
+        },
+        "2026": {
+          "planned": false,
+          "actual": false
+        },
+        "2027": {
+          "planned": false,
+          "actual": false
+        }
+      }
+    },
+    {
+      "id": 34,
+      "task": "核燃料取扱・貯蔵",
+      "level": 1,
+      "children": [
+        {
+          "id": 98,
+          "task": "燃料取扱装置",
+          "level": 2,
+          "children": [
+            {
+              "id": 99,
+              "task": "燃料交換機",
+              "level": 3,
+              "children": [
+                {
+                  "id": 100,
+                  "task": "燃料交換機 年次点検",
+                  "level": 4,
+                  "results": {
+                    "2020": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 6659,
+                      "actualCost": 7319
+                    },
+                    "2021": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 6080,
+                      "actualCost": 6346
+                    },
+                    "2022": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 5503,
+                      "actualCost": 5279
+                    },
+                    "2023": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 6675,
+                      "actualCost": 6781
+                    },
+                    "2024": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 6061,
+                      "actualCost": 6362
+                    },
+                    "2025": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 5362,
+                      "actualCost": 5452
+                    },
+                    "2026": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 6004,
+                      "actualCost": 6428
+                    },
+                    "2027": {
+                      "planned": true,
+                      "actual": false,
+                      "planCost": 5507,
+                      "actualCost": 0
+                    }
+                  },
+                  "parentId": 99,
+                  "bomCode": "8.1.1.1",
+                  "cycle": 1
+                }
+              ],
+              "parentId": 98,
+              "bomCode": "8.1.1",
+              "cycle": "",
+              "rolledUpResults": {
+                "2020": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2021": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2022": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2023": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2024": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2025": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2026": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2027": {
+                  "planned": true,
+                  "actual": false
+                }
+              }
+            }
+          ],
+          "parentId": 34,
+          "bomCode": "8.1",
+          "cycle": "",
+          "rolledUpResults": {
+            "2020": {
+              "planned": false,
+              "actual": false
+            },
+            "2021": {
+              "planned": false,
+              "actual": false
+            },
+            "2022": {
+              "planned": false,
+              "actual": false
+            },
+            "2023": {
+              "planned": false,
+              "actual": false
+            },
+            "2024": {
+              "planned": false,
+              "actual": false
+            },
+            "2025": {
+              "planned": false,
+              "actual": false
+            },
+            "2026": {
+              "planned": false,
+              "actual": false
+            },
+            "2027": {
+              "planned": false,
+              "actual": false
+            }
+          }
+        },
+        {
+          "id": 101,
+          "task": "SFP冷却系",
+          "level": 2,
+          "children": [
+            {
+              "id": 102,
+              "task": "SFPポンプ",
+              "level": 3,
+              "children": [
+                {
+                  "id": 103,
+                  "task": "ポンプ性能試験",
+                  "level": 4,
+                  "results": {
+                    "2020": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 5553,
+                      "actualCost": 5087
+                    },
+                    "2021": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 4623,
+                      "actualCost": 4711
+                    },
+                    "2022": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 5210,
+                      "actualCost": 4934
+                    },
+                    "2023": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 4544,
+                      "actualCost": 4899
+                    },
+                    "2024": {
+                      "planned": true,
+                      "actual": false,
+                      "planCost": 4695,
+                      "actualCost": 0
+                    },
+                    "2025": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 5113,
+                      "actualCost": 5235
+                    },
+                    "2026": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 4903,
+                      "actualCost": 4985
+                    },
+                    "2027": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 5027,
+                      "actualCost": 5464
+                    }
+                  },
+                  "parentId": 102,
+                  "bomCode": "8.2.1.1",
+                  "cycle": 1
+                }
+              ],
+              "parentId": 101,
+              "bomCode": "8.2.1",
+              "cycle": "",
+              "rolledUpResults": {
+                "2020": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2021": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2022": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2023": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2024": {
+                  "planned": true,
+                  "actual": false
+                },
+                "2025": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2026": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2027": {
+                  "planned": true,
+                  "actual": true
+                }
+              }
+            }
+          ],
+          "parentId": 34,
+          "bomCode": "8.2",
+          "cycle": "",
+          "rolledUpResults": {
+            "2020": {
+              "planned": false,
+              "actual": false
+            },
+            "2021": {
+              "planned": false,
+              "actual": false
+            },
+            "2022": {
+              "planned": false,
+              "actual": false
+            },
+            "2023": {
+              "planned": false,
+              "actual": false
+            },
+            "2024": {
+              "planned": false,
+              "actual": false
+            },
+            "2025": {
+              "planned": false,
+              "actual": false
+            },
+            "2026": {
+              "planned": false,
+              "actual": false
+            },
+            "2027": {
+              "planned": false,
+              "actual": false
+            }
+          }
+        },
+        {
+          "id": 104,
+          "task": "使用済燃料貯蔵ラック",
+          "level": 2,
+          "children": [
+            {
+              "id": 105,
+              "task": "健全性評価",
+              "level": 3,
+              "children": [
+                {
+                  "id": 106,
+                  "task": "ボロン減耗/腐食点検・寸法測定",
+                  "level": 4,
+                  "results": {
+                    "2020": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 7432,
+                      "actualCost": 7753
+                    },
+                    "2021": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2022": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 7498,
+                      "actualCost": 7342
+                    },
+                    "2023": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2024": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 8330,
+                      "actualCost": 7997
+                    },
+                    "2025": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    },
+                    "2026": {
+                      "planned": true,
+                      "actual": true,
+                      "planCost": 7647,
+                      "actualCost": 8032
+                    },
+                    "2027": {
+                      "planned": false,
+                      "actual": false,
+                      "planCost": 0,
+                      "actualCost": 0
+                    }
+                  },
+                  "parentId": 105,
+                  "bomCode": "8.3.1.1",
+                  "cycle": 2
+                }
+              ],
+              "parentId": 104,
+              "bomCode": "8.3.1",
+              "cycle": "",
+              "rolledUpResults": {
+                "2020": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2021": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2022": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2023": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2024": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2025": {
+                  "planned": false,
+                  "actual": false
+                },
+                "2026": {
+                  "planned": true,
+                  "actual": true
+                },
+                "2027": {
+                  "planned": false,
+                  "actual": false
+                }
+              }
+            }
+          ],
+          "parentId": 34,
+          "bomCode": "8.3",
+          "cycle": "",
+          "rolledUpResults": {
+            "2020": {
+              "planned": false,
+              "actual": false
+            },
+            "2021": {
+              "planned": false,
+              "actual": false
+            },
+            "2022": {
+              "planned": false,
+              "actual": false
+            },
+            "2023": {
+              "planned": false,
+              "actual": false
+            },
+            "2024": {
+              "planned": false,
+              "actual": false
+            },
+            "2025": {
+              "planned": false,
+              "actual": false
+            },
+            "2026": {
+              "planned": false,
+              "actual": false
+            },
+            "2027": {
+              "planned": false,
+              "actual": false
+            }
+          }
+        }
+      ],
+      "parentId": null,
+      "bomCode": "8",
+      "cycle": "",
+      "rolledUpResults": {
+        "2020": {
+          "planned": false,
+          "actual": false
+        },
+        "2021": {
+          "planned": false,
+          "actual": false
+        },
+        "2022": {
+          "planned": false,
+          "actual": false
+        },
+        "2023": {
+          "planned": false,
+          "actual": false
+        },
+        "2024": {
+          "planned": false,
+          "actual": false
+        },
+        "2025": {
+          "planned": false,
+          "actual": false
+        },
+        "2026": {
+          "planned": false,
+          "actual": false
+        },
+        "2027": {
+          "planned": false,
+          "actual": false
+        }
       }
     }
-  ]
+  ],
+  "costUnit": "千円"
 }
