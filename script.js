@@ -96,12 +96,45 @@ document.addEventListener("DOMContentLoaded", async () => {
         return openStates;
     }
 
+    function updateToggleAllButtonState() {
+        const icon = document.getElementById('toggle-all-header-btn');
+        if (!icon) return;
+
+        const hasChildren = !!tableBody.querySelector('tr.has-children');
+        if (!hasChildren) {
+            icon.classList.add('bi-plus-circle');
+            icon.classList.remove('bi-dash-circle');
+            icon.style.color = '#e9ecef'; // Disabled look
+            return;
+        }
+
+        icon.style.color = ''; // Reset color
+        const hasCollapsedRows = Array.from(tableBody.querySelectorAll('tr.has-children .toggle-icon')).some(el => el.textContent === '▶');
+
+        if (hasCollapsedRows) {
+            icon.classList.add('bi-plus-circle');
+            icon.classList.remove('bi-dash-circle');
+        } else {
+            icon.classList.remove('bi-plus-circle');
+            icon.classList.add('bi-dash-circle');
+        }
+    }
+
     function renderTable(openStates = getOpenStates()) {
         tableHeader.innerHTML = '';
         tableBody.innerHTML = '';
         const headerRow = document.createElement("tr");
         const createTh = (className, text) => { const th = document.createElement("th"); th.className = className; th.textContent = text; return th; };
-        headerRow.appendChild(createTh("task-name-col", "実施項目"));
+        
+        const thTask = createTh("task-name-col", "");
+        thTask.innerHTML = `
+            <div class="task-header-content">
+                <span>実施項目</span>
+                <i class="bi bi-plus-circle action-icon" id="toggle-all-header-btn" title="すべて展開/閉じる"></i>
+            </div>
+        `;
+        headerRow.appendChild(thTask);
+
         headerRow.appendChild(createTh("bom-code-col", "BOMコード"));
         headerRow.appendChild(createTh("cycle-col", "周期(年)"));
         years.forEach(year => headerRow.appendChild(createTh("year-col", `${year}年度`)));
@@ -191,6 +224,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         processData(maintenanceData, '', null);
         maintenanceData.forEach(item => calculateRollups(item));
         renderTable(openStates);
+        updateToggleAllButtonState();
     }
 
     // --- Modal & Edit Handlers ---
@@ -704,23 +738,77 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // --- Event Listeners ---
     function setupEventListeners() {
-        document.getElementById('expand-all-btn').addEventListener('click', () => { document.querySelectorAll('tr.has-children .toggle-icon').forEach(icon => { if (icon.textContent === '▶') icon.click(); }); });
-        document.getElementById('collapse-all-btn').addEventListener('click', () => { document.querySelectorAll('tr.has-children .toggle-icon').forEach(icon => { if (icon.textContent === '▼') icon.click(); }); });
+        // --- Main Controls ---
+        document.getElementById('view-mode-switch').addEventListener('change', (e) => {
+            currentViewMode = e.target.checked ? 'cost' : 'status';
+            const legendStatus = document.getElementById('legend-status');
+            const legendCost = document.getElementById('legend-cost');
+            if (legendStatus && legendCost) {
+                legendStatus.style.display = currentViewMode === 'status' ? '' : 'none';
+                legendCost.style.display = currentViewMode === 'cost' ? '' : 'none';
+            }
+            initialize(getOpenStates());
+        });
+
+        // --- Settings Dropdown ---
         document.getElementById('show-bom-code-check').addEventListener('change', (e) => {
             const display = e.target.checked ? '' : 'none';
             const cycleColLeft = e.target.checked ? '400px' : '250px';
             document.querySelectorAll('.bom-code-col').forEach(cell => cell.style.display = display);
             document.querySelectorAll('.cycle-col').forEach(cell => cell.style.left = cycleColLeft);
         });
-        document.getElementById('show-cycle-check').addEventListener('change', (e) => { document.querySelectorAll('.cycle-col').forEach(cell => cell.style.display = e.target.checked ? '' : 'none'); });
+        document.getElementById('show-cycle-check').addEventListener('change', (e) => { 
+            document.querySelectorAll('.cycle-col').forEach(cell => cell.style.display = e.target.checked ? '' : 'none'); 
+        });
+
+        // --- Year/Data Dropdowns ---
         document.getElementById('add-year-btn').addEventListener('click', (e) => { e.preventDefault(); handleAddYear(); });
         document.getElementById('delete-year-btn').addEventListener('click', (e) => { e.preventDefault(); handleDeleteYear(); });
         document.getElementById('export-data-btn').addEventListener('click', (e) => { e.preventDefault(); handleExportData(); });
         document.getElementById('import-data-btn').addEventListener('click', (e) => { e.preventDefault(); handleImportData(); });
         document.getElementById('reset-data-btn').addEventListener('click', (e) => { e.preventDefault(); handleResetData(); });
         importFileInput.addEventListener('change', handleFileImport);
+
+        // --- Search ---
         document.getElementById('search-input').addEventListener('input', handleSearch);
         
+        // --- Table Header Clicks (Delegated) ---
+        tableHeader.addEventListener('click', (e) => {
+            const target = e.target;
+            if (target.id === 'toggle-all-header-btn') {
+                const shouldExpand = target.classList.contains('bi-plus-circle');
+
+                // Directly manipulate all rows
+                document.querySelectorAll('tr.has-children').forEach(row => {
+                    const icon = row.querySelector('.toggle-icon');
+                    if (icon) icon.textContent = shouldExpand ? '▼' : '▶';
+                    if (currentViewMode === 'status') {
+                        row.querySelectorAll('.summary-mark').forEach(mark => {
+                            mark.style.display = shouldExpand ? 'none' : 'block';
+                        });
+                    }
+                });
+
+                document.querySelectorAll('tr[data-parent-id]').forEach(row => {
+                    if (shouldExpand) {
+                        row.classList.remove('d-none');
+                    } else {
+                        row.classList.add('d-none');
+                    }
+                });
+
+                // Update the button itself
+                if (shouldExpand) {
+                    target.classList.remove('bi-plus-circle');
+                    target.classList.add('bi-dash-circle');
+                } else {
+                    target.classList.add('bi-plus-circle');
+                    target.classList.remove('bi-dash-circle');
+                }
+            }
+        });
+
+        // --- Table Body Clicks (Delegated) ---
         tableBody.addEventListener('click', (e) => {
             const target = e.target;
             const row = target.closest('tr');
@@ -730,13 +818,14 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             if (target.closest('.toggle-icon')) {
                 toggleChildren(id, target.closest('.toggle-icon'));
+                updateToggleAllButtonState(); // Update header icon after individual toggle
             } else if (target.classList.contains('action-icon')) {
                 if (target.classList.contains('add')) handleAddTask(id);
                 else if (target.classList.contains('edit')) handleEditTask(id, row.querySelector('.task-text-container'));
                 else if (target.classList.contains('delete')) handleDeleteTask(id);
                 else if (target.classList.contains('bulk-add')) handleBulkAddPlans(id);
             } else if (target.closest('.year-col') && !item.children) {
-                const yearCell = target.closest('.year-col');
+                const yearCell = target.closest('year-col');
                 if (currentViewMode === 'status') {
                     handleYearCellClick(yearCell);
                 } else {
@@ -747,15 +836,8 @@ document.addEventListener("DOMContentLoaded", async () => {
             }
         });
 
-        document.querySelectorAll('input[name="view-mode"]').forEach(radio => {
-            radio.addEventListener('change', (e) => {
-                currentViewMode = e.target.id === 'view-mode-cost' ? 'cost' : 'status';
-                initialize(getOpenStates());
-            });
-        });
-
+        // --- Edit Menu ---
         editMenu.addEventListener('click', handleEditMenuClick);
-
         document.addEventListener('click', (e) => {
             if (currentEditCell && !editMenu.contains(e.target) && !currentEditCell.contains(e.target)) {
                 editMenu.style.display = 'none';

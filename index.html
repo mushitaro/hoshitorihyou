@@ -12,35 +12,38 @@
 <body>
     <div class="container-fluid">
         <h1 class="mb-4">星取表</h1>
-        <div class="controls">
-            <div>
-                <button id="expand-all-btn" class="btn btn-sm btn-outline-secondary">すべて展開</button>
-                <button id="collapse-all-btn" class="btn btn-sm btn-outline-secondary">すべて閉じる</button>
+        <div class="top-controls-wrapper">
+            <div class="search-container">
+                <input type="search" id="search-input" class="form-control form-control-sm" placeholder="実施項目を検索...">
             </div>
-            <div class="vr"></div>
-            <div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="show-bom-code-check" checked>
-                    <label class="form-check-label" for="show-bom-code-check">BOMコード</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="show-cycle-check" checked>
-                    <label class="form-check-label" for="show-cycle-check">周期</label>
-                </div>
+
+            <div class="form-check form-switch">
+                <label class="form-check-label" for="view-mode-switch">星取</label>
+                <input class="form-check-input" type="checkbox" role="switch" id="view-mode-switch">
+                <label class="form-check-label" for="view-mode-switch">コスト</label>
             </div>
-            <div class="vr"></div>
-            <div id="legend"><small><strong>凡例:</strong><span class="mx-2">〇: 計画</span><span class="actual-mark mx-2">●: 実績</span><span class="summary-mark mx-2">〇 ●: 集計</span></small></div>
-            <div class="vr"></div>
-            <div>
-                <small class="me-2 text-muted">表示:</small>
-                <div class="btn-group btn-group-sm" role="group">
-                    <input type="radio" class="btn-check" name="view-mode" id="view-mode-status" autocomplete="off" checked>
-                    <label class="btn btn-outline-secondary" for="view-mode-status"><i class="bi bi-check2-circle me-1"></i>計画/実績</label>
-                    <input type="radio" class="btn-check" name="view-mode" id="view-mode-cost" autocomplete="off">
-                    <label class="btn btn-outline-secondary" for="view-mode-cost"><i class="bi bi-currency-yen me-1"></i>コスト</label>
-                </div>
+
+            <div class="dropdown">
+                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    表示設定
+                </button>
+                <ul class="dropdown-menu">
+                    <li><h6 class="dropdown-header">表示設定</h6></li>
+                    <li>
+                        <div class="form-check form-switch px-4">
+                            <input class="form-check-input" type="checkbox" id="show-bom-code-check" checked>
+                            <label class="form-check-label" for="show-bom-code-check">BOMコード</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check form-switch px-4">
+                            <input class="form-check-input" type="checkbox" id="show-cycle-check" checked>
+                            <label class="form-check-label" for="show-cycle-check">周期</label>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="vr"></div>
+
             <div class="dropdown">
                 <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="year-operations-btn" data-bs-toggle="dropdown" aria-expanded="false">
                     年度操作
@@ -50,23 +53,26 @@
                     <li><a class="dropdown-item" id="delete-year-btn" href="#">削除</a></li>
                 </ul>
             </div>
-            <!-- ★追加: データ操作メニュー -->
-            <div class="vr"></div>
             <div class="dropdown">
                 <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="data-operations-btn" data-bs-toggle="dropdown" aria-expanded="false">
                     データ操作
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="data-operations-btn">
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="data-operations-btn">
                     <li><a class="dropdown-item" id="export-data-btn" href="#"><i class="bi bi-box-arrow-down me-2"></i>エクスポート (JSON)</a></li>
                     <li><a class="dropdown-item" id="import-data-btn" href="#"><i class="bi bi-box-arrow-in-up me-2"></i>インポート (JSON)</a></li>
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item text-danger" id="reset-data-btn" href="#"><i class="bi bi-arrow-counterclockwise me-2"></i>データを初期化</a></li>
                 </ul>
             </div>
-            <div class="ms-auto">
-                <input type="search" id="search-input" class="form-control form-control-sm" placeholder="実施項目を検索...">
+
+            <div id="legend-status" class="legend-container ms-auto">
+                <small><strong>凡例:</strong><span class="mx-2">〇: 計画</span><span class="actual-mark mx-2">●: 実績</span><span class="summary-mark mx-2">〇 ●: 集計</span></small>
+            </div>
+            <div id="legend-cost" class="legend-container ms-auto" style="display: none;">
+                <small><strong>凡例:</strong><span class="mx-2 cost-plan">(123)</span>: 計画<span class="mx-2 cost-actual">(123)</span>: 実績</small>
             </div>
         </div>
+
         <div class="table-container">
             <table class="table table-bordered table-hover">
                 <thead id="table-header"></thead>
